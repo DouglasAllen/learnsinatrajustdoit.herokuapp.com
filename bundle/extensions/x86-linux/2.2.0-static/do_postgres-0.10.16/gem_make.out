@@ -1,0 +1,67 @@
+/home/kb9agt/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20150817-3502-10r41i6.rb extconf.rb
+checking for main() in -lpq... yes
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for postgres.h... yes
+checking for mb/pg_wchar.h... yes
+checking for catalog/pg_type.h... yes
+checking for localtime_r()... yes
+checking for gmtime_r()... yes
+checking for PQsetClientEncoding()... yes
+checking for pg_encoding_to_char()... yes
+checking for PQfreemem()... yes
+checking for rb_thread_fd_select()... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling do_postgres.c
+do_postgres.c: In function ‘do_postgres_cConnection_dispose’:
+do_postgres.c:133:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cConnection_quote_string’:
+do_postgres.c:156:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:164:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cCommand_execute_async’:
+do_postgres.c:260:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:263:3: warning: implicit declaration of function ‘gettimeofday’ [-Wimplicit-function-declaration]
+do_postgres.c:284:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cConnection_initialize’:
+do_postgres.c:317:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:323:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:329:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:335:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:341:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:349:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:353:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:365:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_full_connect’:
+do_postgres.c:380:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:387:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:394:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:401:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:414:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:431:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:453:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:487:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cCommand_execute_non_query’:
+do_postgres.c:524:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:532:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cCommand_execute_reader’:
+do_postgres.c:565:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:574:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:583:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:597:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cReader_close’:
+do_postgres.c:620:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c: In function ‘do_postgres_cReader_next’:
+do_postgres.c:642:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:656:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+do_postgres.c:665:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+compiling do_common.c
+do_common.c: In function ‘data_objects_debug’:
+do_common.c:58:3: warning: implicit declaration of function ‘gettimeofday’ [-Wimplicit-function-declaration]
+linking shared-object do_postgres/do_postgres.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 do_postgres.so ./.gem.20150817-3502-1mlxl9c/do_postgres

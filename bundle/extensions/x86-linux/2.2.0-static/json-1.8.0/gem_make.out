@@ -1,0 +1,14 @@
+/home/kb9agt/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20150817-3451-4600xf.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling generator.c
+In file included from generator.c:1:0:
+../fbuffer/fbuffer.h: In function ‘fbuffer_to_s’:
+../fbuffer/fbuffer.h:175:47: error: macro "rb_str_new" requires 2 arguments, but only 1 given
+../fbuffer/fbuffer.h:175:20: warning: initialization makes integer from pointer without a cast [enabled by default]
+make: *** [generator.o] Error 1
+
+make failed, exit code 2
